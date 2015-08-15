@@ -181,6 +181,14 @@
 #define ROM_MODULES_DHT
 #endif
 
+#if defined(LUA_USE_MODULES_IR)
+#define MODULES_IR          "ir"
+#define ROM_MODULES_DHT     \
+    _ROM(MODULES_IR, luaopen_ir, ir_map)
+#else
+#define ROM_MODULES_IR
+#endif
+
 #define LUA_MODULES_ROM     \
         ROM_MODULES_GPIO    \
         ROM_MODULES_PWM		\
@@ -203,6 +211,7 @@
         ROM_MODULES_CJSON   \
         ROM_MODULES_CRYPTO  \
         ROM_MODULES_RC      \
-        ROM_MODULES_DHT
+        ROM_MODULES_DHT		\
+        ROM_MODULES_IR
 
 #endif

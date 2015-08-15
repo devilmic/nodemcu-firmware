@@ -91,6 +91,9 @@ LUALIB_API int ( luaopen_rc )( lua_State *L );
 #define AUXLIB_DHT      "dht"
 LUALIB_API int ( luaopen_dht )( lua_State *L );
 
+#define AUXLIB_IR       "ir"
+LUALIB_API int ( luaopen_ir )( lua_State *L );
+
 // Helper macros
 #define MOD_CHECK_ID( mod, id )\
   if( !platform_ ## mod ## _exists( id ) )\
