@@ -1,3 +1,6 @@
+# **NodeMCU infrared module** #
+This is a fork of NodeMCU-firmware to include the infrared module based on Mat Salvaris IRRemote.
+
 # **NodeMCU** #
 version 0.9.5
 
