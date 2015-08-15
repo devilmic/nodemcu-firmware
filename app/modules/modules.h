@@ -183,7 +183,7 @@
 
 #if defined(LUA_USE_MODULES_IR)
 #define MODULES_IR          "ir"
-#define ROM_MODULES_DHT     \
+#define ROM_MODULES_IR     \
     _ROM(MODULES_IR, luaopen_ir, ir_map)
 #else
 #define ROM_MODULES_IR
